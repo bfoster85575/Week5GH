@@ -1,0 +1,12 @@
+name: CI
+on:
+push:
+pull_request:
+jobs:
+artifact-check:
+runs-on: <what goes here>
+steps:
+- name: Checkout
+uses: actions/checkout@v4
+- name: Run artifact check
+run: <what goes here>
